@@ -23,4 +23,11 @@ public class CalcServiceImpl_1 implements CalcService{
     public double log10(double x) {
         return Math.log10(x);
     }
+
+
+    public static void main(String[] args) {
+        CalcService calcService = new CalcServiceImplWithExceptionHandling();
+        calcService.divide(1,2);
+
+    }
 }

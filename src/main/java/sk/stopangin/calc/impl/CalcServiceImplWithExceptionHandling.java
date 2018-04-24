@@ -29,4 +29,19 @@ public class CalcServiceImplWithExceptionHandling implements CalcService {
     public double log10(double x) {
         return Math.log10(x);
     }
+
+
+    private static void vypisu(int[] arr, int x){
+        int rozhas = arr.length;
+        for(int i=0;i<rozhas-1;i++){
+            for(int j=0;j<x;j++){
+                System.out.println(arr[i]);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int arr[]={1,2,3,4,5};
+        vypisu(arr,3);
+    }
 }

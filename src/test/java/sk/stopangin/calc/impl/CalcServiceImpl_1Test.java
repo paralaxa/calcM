@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import sk.stopangin.calc.CalcService;
 
+
 public class CalcServiceImpl_1Test {
     private CalcService calc;
 
