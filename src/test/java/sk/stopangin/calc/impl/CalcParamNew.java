@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
-
+//test
 @RunWith(JUnitParamsRunner.class)
 public class CalcParamNew {
     private CalcService calc;
