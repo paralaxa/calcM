@@ -12,18 +12,18 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
-//test
+
 @RunWith(JUnitParamsRunner.class)
-public class CalcParamNew {
+public class CalcServiceImpl_1_ParametrizedTest {
     private CalcService calc;
-    //test
+//test
     @Parameterized.Parameters(name = "{index}: add({0}+{1})={2}")
     public static Collection<Object[]> dataForAdd() {
         return Arrays.asList(new Object[][]{
                 {1.0, 1.0, 2.0}, {2.0, 1.0, 3.0}, {3.0, 2.0, 5.0}, {4.0, 3.0, 7.0}, {5.0, 5.0, 10.0}, {6.0, 8.0, 14.0}
         });
     }
-    //test2
+//test2
     @Parameterized.Parameters(name = "{index}: subtract({0}+{1})={2}")
     public static Collection<Object[]> dataForSubstraction() {
         return Arrays.asList(new Object[][]{
@@ -31,7 +31,7 @@ public class CalcParamNew {
         });
     }
 
-    //test
+//test
     @Before
     public void setUp() throws Exception {
         calc = new CalcServiceImpl_1();
